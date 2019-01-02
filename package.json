@@ -1,0 +1,35 @@
+{
+  "name": "jordan-scrapes-contact-pages",
+  "version": "1.0.0",
+  "description": "Jordan continues his adventures of web scraping by using puppeteer to scrape web pages for contact information.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js",
+    "start:ubuntu": "tsc && node ./dist/index.js ubuntu",
+    "start:headless": "tsc && node ./dist/index.js headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarmora/jordan-scrapes-contact-pages.git"
+  },
+  "keywords": [
+    "javascript",
+    "puppeteer",
+    "web",
+    "scraping"
+  ],
+  "author": "Jordan Hansen",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.11.0",
+    "puppeteer-helpers": "^1.0.10",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^1.11.1"
+  },
+  "bugs": {
+    "url": "https://github.com/aarmora/jordan-scrapes-contact-pages/issues"
+  },
+  "homepage": "https://github.com/aarmora/jordan-scrapes-contact-pages#readme"
+}
