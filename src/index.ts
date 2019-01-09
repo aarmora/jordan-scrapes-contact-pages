@@ -1,6 +1,8 @@
 import puppeteer, { Browser, Page } from 'puppeteer';
 import { getPropertyByHandle, setUpNewPage } from 'puppeteer-helpers';
 
+const desiredUrl = 'http://clenera.com';
+
 
 (async () => {
     try {
@@ -21,7 +23,7 @@ import { getPropertyByHandle, setUpNewPage } from 'puppeteer-helpers';
         }
         const page = await setUpNewPage(browser);
 
-        await page.goto('http://clenera.com');
+        await page.goto(desiredUrl);
 
         // Check the home page to see if it has a phone number
         let potentialPhoneNumbers: any = await getPhoneNumber(page);
